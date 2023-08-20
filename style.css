@@ -1,0 +1,71 @@
+html, body{
+    background-color: black;
+    height: 100%;
+    margin: 0px;
+}
+
+#main-container{
+    width: 70%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(5, 1fr);
+    margin: auto;
+}
+
+#header{
+    grid-area: 1 / 2 / 2 / 6;
+    background-color: white;
+}
+
+#sidebar{
+    grid-area: 1 / 1 / 6 / 2;
+    background-color: rgb(64, 133, 212);
+}
+
+#main{
+    grid-area: 2 / 2 / 6 / 6;
+    background-color: lightgrey;
+    padding: 20px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+#main-left{
+    grid-area: 1 / 1 / 5 / 4;
+}
+
+#main-right{
+    grid-area: 1 / 4 / 5 / 5;
+}
+
+#main-left > div{
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    gap: 25px;
+    height: 90%;
+}
+
+.projects{
+    background-color: white;
+    border-radius: 5px;
+}
+
+#main-right > div{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 25px;
+    height: 90%;
+}
+
+#announcements{
+    background-color: white;
+    border-radius: 5px;
+}
+
+#trending{
+    background-color: white;
+    border-radius: 5px;
+}
